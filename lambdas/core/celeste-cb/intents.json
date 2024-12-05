@@ -1,0 +1,150 @@
+{
+    "intents": [
+        {
+            "tag": "saludos",
+            "patterns": [
+                "¡Hola!",
+                "¿Cómo estás?",
+                "Buenas tardes",
+                "¿Qué tal?",
+                "Hola, ¿cómo te va?"
+            ],
+            "responses": [
+                "¡Hola! ¿En qué puedo ayudarte?",
+                "¡Hola! Estoy aquí para ayudarte.",
+                "¡Hola! ¿Cómo puedo asistirte hoy?"
+            ],
+            "context": ""
+        },
+        {
+            "tag": "definicion_chatbot",
+            "patterns": [
+                "¿Qué es un chatbot?",
+                "¿Cómo funciona un chatbot?",
+                "Explica qué es un chatbot",
+                "¿Qué significa chatbot?"
+            ],
+            "responses": [
+                "Un chatbot es un programa de software diseñado para simular una conversación con usuarios humanos, generalmente a través de texto o voz.",
+                "Un chatbot es una aplicación que utiliza inteligencia artificial para interactuar con las personas de manera automatizada.",
+                "Un chatbot es un asistente virtual que responde preguntas y ayuda con tareas utilizando inteligencia artificial."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "definicion_llm",
+            "patterns": [
+                "¿Qué es un LLM?",
+                "¿Qué significa LLM?",
+                "Explícame qué es un modelo de lenguaje grande",
+                "¿Qué es un modelo de lenguaje de gran escala?"
+            ],
+            "responses": [
+                "LLM significa 'Large Language Model' (Modelo de Lenguaje Grande), es un tipo de modelo de inteligencia artificial entrenado en grandes cantidades de texto para comprender y generar lenguaje humano.",
+                "Un LLM es un modelo de lenguaje entrenado con vastos datos, capaz de entender y generar texto en lenguaje natural.",
+                "Los LLM son modelos de IA entrenados en grandes volúmenes de texto para tareas como traducción, resumen, generación de texto y respuesta a preguntas."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "funcionamiento_chatbot",
+            "patterns": [
+                "¿Cómo funciona un chatbot?",
+                "¿Cómo interactúa un chatbot con las personas?",
+                "¿Cómo un chatbot sabe qué responder?",
+                "¿Cómo puede un chatbot entender lo que digo?"
+            ],
+            "responses": [
+                "Un chatbot funciona mediante algoritmos de procesamiento de lenguaje natural (PLN) que interpretan las palabras y frases de los usuarios, generando respuestas en base a su entrenamiento.",
+                "Los chatbots utilizan inteligencia artificial y PLN para analizar el texto del usuario y generar respuestas apropiadas, basándose en patrones previamente aprendidos.",
+                "El chatbot entiende lo que dices mediante un proceso de análisis de texto y responde según los datos y reglas con las que fue entrenado."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "entrenamiento_llm",
+            "patterns": [
+                "¿Cómo se entrena un LLM?",
+                "¿Qué datos se utilizan para entrenar un modelo de lenguaje?",
+                "¿Cómo aprende un LLM a generar texto?",
+                "¿Qué tipo de información necesita un LLM para aprender?"
+            ],
+            "responses": [
+                "Un LLM se entrena con grandes cantidades de texto de diversas fuentes, como libros, artículos, páginas web, y otros contenidos textuales.",
+                "Para entrenar un LLM, se alimenta a la máquina con enormes volúmenes de datos textuales. El modelo aprende patrones y estructuras del lenguaje de esos datos.",
+                "El entrenamiento de un LLM se realiza mediante algoritmos de aprendizaje profundo que analizan miles de millones de palabras para aprender a predecir la siguiente palabra o generar respuestas coherentes."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "ventajas_chatbot",
+            "patterns": [
+                "¿Cuáles son las ventajas de usar un chatbot?",
+                "¿Por qué usar un chatbot?",
+                "¿Qué beneficios tiene tener un chatbot?"
+            ],
+            "responses": [
+                "Los chatbots permiten atención 24/7, reducen los tiempos de espera, mejoran la eficiencia operativa, y brindan respuestas rápidas y precisas.",
+                "Un chatbot puede automatizar tareas repetitivas, mejorar la experiencia del cliente, y ofrecer respuestas instantáneas, ahorrando tiempo tanto para el usuario como para la empresa.",
+                "Al usar un chatbot, puedes atender a varios usuarios al mismo tiempo, mejorar la disponibilidad y personalizar la interacción en función de las preferencias del usuario."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "limitaciones_chatbot",
+            "patterns": [
+                "¿Qué limitaciones tienen los chatbots?",
+                "¿Cuáles son los problemas de los chatbots?",
+                "¿Qué no puede hacer un chatbot?"
+            ],
+            "responses": [
+                "Los chatbots pueden tener dificultades para comprender contextos complejos o emociones, y a menudo dependen de los datos con los que fueron entrenados.",
+                "Las limitaciones de los chatbots incluyen la incapacidad de entender ironías o ambigüedades, la falta de personalización profunda, y problemas con la interpretación de preguntas fuera de su base de datos entrenada.",
+                "Los chatbots no son buenos para tareas que requieren juicio humano, creatividad o comprensión profunda de situaciones complejas."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "mejoras_chatbot",
+            "patterns": [
+                "¿Cómo mejorar un chatbot?",
+                "¿Qué se puede hacer para que un chatbot sea más inteligente?",
+                "¿Cómo hacer que un chatbot entienda mejor al usuario?"
+            ],
+            "responses": [
+                "Se puede mejorar un chatbot entrenándolo con más datos, actualizando su base de conocimientos, y utilizando tecnologías de NLP más avanzadas.",
+                "La clave para mejorar un chatbot es monitorear su rendimiento, analizar interacciones pasadas y ajustar sus respuestas en función de las necesidades de los usuarios.",
+                "Mejorar la comprensión de un chatbot requiere refinar su modelo de lenguaje y usar técnicas de aprendizaje automático para adaptarse mejor a las consultas de los usuarios."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "casos_de_uso_chatbot",
+            "patterns": [
+                "¿Dónde se utilizan los chatbots?",
+                "¿Para qué sirven los chatbots?",
+                "¿Qué aplicaciones tienen los chatbots?"
+            ],
+            "responses": [
+                "Los chatbots se utilizan en servicio al cliente, ventas, soporte técnico, educación, marketing, y muchos otros sectores.",
+                "Los chatbots pueden integrarse en páginas web, aplicaciones móviles, redes sociales y plataformas de mensajería para facilitar la comunicación con los usuarios.",
+                "Los chatbots son útiles en áreas como atención al cliente, recopilación de datos, automatización de procesos, y como asistentes virtuales."
+            ],
+            "context": ""
+        },
+        {
+            "tag": "futuro_chatbots",
+            "patterns": [
+                "¿Cuál es el futuro de los chatbots?",
+                "¿Cómo serán los chatbots en el futuro?",
+                "¿Qué avances se esperan en los chatbots?"
+            ],
+            "responses": [
+                "El futuro de los chatbots incluye una mayor integración con IA avanzada, como la comprensión emocional y la personalización adaptativa.",
+                "Los chatbots del futuro serán más inteligentes, contextuales y capaces de mantener conversaciones más naturales, gracias a mejoras en NLP y aprendizaje automático.",
+                "En el futuro, los chatbots podrían evolucionar hacia asistentes más humanos, capaces de comprender mejor las emociones y contextos complejos."
+            ],
+            "context": ""
+        }
+    ]
+}
