@@ -1,6 +1,8 @@
 pip3 install --upgrade pip
 pip3 install -r requirements.txt
 pip3 install -r requirements.txt -t ./libs
+# no agregar dependencias
+pip3 install -r requirements.txt -t ./libs --no-deps
 python3 training.py
 python3 main.py
 
