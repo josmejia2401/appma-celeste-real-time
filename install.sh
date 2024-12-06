@@ -21,16 +21,16 @@ cd $BASEDIR
 
 echo "############ Iniciando instalacion lambdas/core/celeste-cb ############"
 echo "Entrando a josmejia2401-js"
-cd "${BASEDIR}/lambdas/josmejia2401-js"
+cd "${BASEDIR}/lambdas/core/celeste-cb"
 echo "Instanando en ${BASEDIR}/lambdas/core/celeste-cb"
 pip3 install -r requirements.txt -t ./libs --no-deps
 echo "Regresando a $BASEDIR"
 cd $BASEDIR
 
-echo "############ Iniciando instalacion lambdas/co~re/real-time ############"
+echo "############ Iniciando instalacion lambdas/core/celeste-real-time ############"
 echo "Entrando a josmejia2401-js"
-cd "${BASEDIR}/lambdas/josmejia2401-js"
-echo "Instanando en ${BASEDIR}/lambdas/core/real-time"
+cd "${BASEDIR}/lambdas/core/celeste-real-time"
+echo "Instanando en ${BASEDIR}/lambdas/core/celeste-real-time"
 npm install --production
 echo "Regresando a $BASEDIR"
 cd $BASEDIR

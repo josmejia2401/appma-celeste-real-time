@@ -39,14 +39,16 @@ module "api_gateway" {
 # API GATEWAY RESOURCES
 ####################
 
-module "api_gateway_resources_celeste_cb" {
-  source = "./modules/apigateway-resources-celeste-cb"
-  api_id = module.api_gateway.api_id # < output of module.api_gateway
-  depends_on = [
-    module.api_gateway,
-    module.sessions_dynamodb
-  ]
-}
+# no se puede instalar porque el zip pesa mas del tamaño maximo para una lambda
+
+#module "api_gateway_resources_celeste_cb" {
+#  source = "./modules/apigateway-resources-celeste-cb"
+#  api_id = module.api_gateway.api_id # < output of module.api_gateway
+#  depends_on = [
+#    module.api_gateway,
+#    module.sessions_dynamodb
+#  ]
+#}
 
 module "api_gateway_resources_real_time" {
   source = "./modules/apigateway-resources-celeste-real-time"

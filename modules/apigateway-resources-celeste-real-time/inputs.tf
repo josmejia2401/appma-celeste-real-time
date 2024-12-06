@@ -10,10 +10,10 @@ variable "env" {
 }
 
 variable "app_name" {
-  description = "Nombre de la aplicación: celeste-cb"
+  description = "Nombre de la aplicación: appma"
   type        = string
   nullable    = false
-  default     = "celeste-cb"
+  default     = "appma"
 }
 
 variable "domain" {
@@ -43,7 +43,7 @@ variable "environment_variables" {
     ENVIRONMENT      = "dev"
     LOGGER_LEVEL     = "DEBUG"
     REGION           = "us-east-1"
-    APP_NAME         = "celeste-cb"
+    APP_NAME         = "appma"
     JTW_SECRET_VALUE = "secret"
     JWT_TOKEN_LIFE   = "365d"
   }
@@ -68,7 +68,7 @@ variable "tags" {
   nullable    = true
   default = {
     domain    = "core"
-    component = "celeste-ch"
+    component = "appma"
     env       = "dev"
   }
 }

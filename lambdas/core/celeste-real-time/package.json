@@ -19,7 +19,8 @@
     },
     "homepage": "https://github.com/josmejia2401/appointment-management-lmb#readme",
     "dependencies": {
+        "@aws-sdk/client-apigatewaymanagementapi": "3.699.0",
         "josmejia2401-js": "file:../../josmejia2401-js",
-        "@aws-sdk/client-apigatewaymanagementapi": "3.699.0"
+        "ws": "^8.18.0"
     }
 }
