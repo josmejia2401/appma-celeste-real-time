@@ -75,7 +75,7 @@ def input_data(msg):
 #except KeyboardInterrupt as e:
 #    print(e)
 
-def lambda_handler(event, context):
+def handler(event, context):
     try:
         body = json.loads(event['body'])
         entry = body['message']

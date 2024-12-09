@@ -9,10 +9,10 @@ resource "aws_apigatewayv2_integration" "lambda_handler" {
 
 resource "aws_apigatewayv2_route" "post_handler" {
   api_id             = data.aws_apigatewayv2_api.selected.id
-  route_key          = "POST /api/v1/${var.domain}"
+  route_key          = "POST /api/v1/${var.domain}/celeste-cb"
   target             = "integrations/${aws_apigatewayv2_integration.lambda_handler.id}"
-  authorization_type = "CUSTOM"
-  authorizer_id      = var.authorizer_id
+  authorization_type = "NONE"
+  authorizer_id      = 0
 }
 
 resource "aws_lambda_permission" "api_gw" {

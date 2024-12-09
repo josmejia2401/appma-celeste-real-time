@@ -17,9 +17,3 @@ data "aws_caller_identity" "current" {
 data "aws_region" "current" {
 
 }
-
-
-# Data source to check if the S3 bucket exists
-data "aws_s3_bucket" "existing_bucket" {
-  bucket = "bucket-appma-lambda-target-${var.env}"
-}

@@ -24,11 +24,10 @@ resource "aws_iam_role_policy_attachment" "lambda_role_policy" {
 data "aws_iam_policy_document" "lambda_policy_document" {
   statement {
     actions = [
-      "dynamodb:Scan", "dynamodb:PutItem", "dynamodb:DeleteItem", "dynamodb:GetItem"
+      "dynamodb:Scan", "dynamodb:PutItem"
     ]
     resources = [
-      "arn:aws:dynamodb:${local.region_name}:${local.account_id}:table/tbl-${var.app_name}-users-${var.env}",
-      "arn:aws:dynamodb:${local.region_name}:${local.account_id}:table/tbl-${var.app_name}-sessions-${var.env}"
+      "arn:aws:dynamodb:${local.region_name}:${local.account_id}:table/tbl-${var.app_name}-functionalities-${var.env}"
     ]
   }
 }

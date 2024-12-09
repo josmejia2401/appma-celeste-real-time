@@ -23,7 +23,8 @@ echo "############ Iniciando instalacion lambdas/core/celeste-cb ############"
 echo "Entrando a josmejia2401-js"
 cd "${BASEDIR}/lambdas/core/celeste-cb"
 echo "Instanando en ${BASEDIR}/lambdas/core/celeste-cb"
-pip3 install -r requirements.txt -t ./libs --no-deps
+#pip3 install -r requirements.txt -t ./libs --no-deps
+pip3 install -r requirements.txt -t ./libs
 echo "Regresando a $BASEDIR"
 cd $BASEDIR
 

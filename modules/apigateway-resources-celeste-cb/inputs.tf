@@ -10,10 +10,10 @@ variable "env" {
 }
 
 variable "app_name" {
-  description = "Nombre de la aplicación: celeste-cb"
+  description = "Nombre de la aplicación: AppMa"
   type        = string
   nullable    = false
-  default     = "celeste-cb"
+  default     = "appma"
 }
 
 variable "domain" {
@@ -28,10 +28,10 @@ variable "domain" {
 }
 
 variable "lambda_index" {
-  description = "Ubicación del lambda_handler"
+  description = "Ubicación del index.py"
   type        = string
   nullable    = false
-  default     = "index.lambda_handler"
+  default     = "index.handler"
 }
 
 
@@ -43,7 +43,7 @@ variable "environment_variables" {
     ENVIRONMENT      = "dev"
     LOGGER_LEVEL     = "DEBUG"
     REGION           = "us-east-1"
-    APP_NAME         = "celeste-cb"
+    APP_NAME         = "appma"
     JTW_SECRET_VALUE = "secret"
     JWT_TOKEN_LIFE   = "365d"
   }
@@ -54,7 +54,7 @@ variable "lambda_runtime" {
   description = "Config runtime de la lambda"
   type        = string
   validation {
-    condition     = contains(["python3.12"], var.lambda_runtime)
+    condition     = contains(["python3.9", "python3.10", "python3.11", "python3.12", "python3.13"], var.lambda_runtime)
     error_message = "Runtime no es válido. Ver más https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html"
   }
   nullable = false
@@ -68,7 +68,7 @@ variable "tags" {
   nullable    = true
   default = {
     domain    = "core"
-    component = "celeste-ch"
+    component = "functionalities-create"
     env       = "dev"
   }
 }
